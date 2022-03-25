@@ -16,7 +16,7 @@ wsl --set-version Ubuntu-18.04 2
 3. Go into wsl with ```wsl -u root -d Ubuntu-18.04``` in Powershell; make sure you have git installed then clone the following repo and run the shell command:  
 ```
 sudo apt install git
-git clone https://github.com/DamionGans/ubuntu-...
+git clone https://github.com/DamionGans/ubuntu-wsl2-systemd-script.git
 cd ubuntu-wsl2-systemd-script/
 bash ubuntu-wsl2-systemd-script.sh
 bash ubuntu-wsl2-systemd-script.sh --force
