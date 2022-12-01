@@ -1,4 +1,4 @@
-# How to enable systemd in WSL Ubuntu-18.04 #
+# How to enable systemd in WSL Ubuntu #
 
 You may get this error in command line when trying to run a service with WSL:  
 
