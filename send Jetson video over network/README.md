@@ -8,14 +8,12 @@ See Jose for using it with tailscale if the Jetson and remote machine are not on
 ```
 sudo add-apt-repository universe
 sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-bad1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-good1.0-dev
-
 ```  
 
 2. run this gstreamer command:
 
 ```
 gst-launch-1.0 -v udpsrc port=1234  caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" !  rtph264depay ! decodebin ! videoconvert ! autovideosink
-
 ```
 
 4. on the Jetson, run the `video-viewer` or `detectnet` command with an attached webcam (usually `/dev/video0` for any USB cameras) with the following command:
