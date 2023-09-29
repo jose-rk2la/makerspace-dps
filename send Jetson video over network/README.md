@@ -19,7 +19,7 @@ gst-launch-1.0 -v udpsrc port=1234  caps = "application/x-rtp, media=(string)vid
 4. on the Jetson, run the `video-viewer` or `detectnet` command with an attached webcam (usually `/dev/video0` for any USB cameras) with the following command:
 
 ```
-detectnet /dev/video0 rtp://<remote-ip>:1234
+detectnet /dev/video0 rtp://<remote-ip>:1234 
 ```
 
-this should send the video feed to your remote machine
+note that you need to replace `<remote-ip>` with the ip address of the remote machine; this should send the video feed to your remote machine
